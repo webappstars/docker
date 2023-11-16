@@ -1,8 +1,6 @@
 docker run -d \
   --name=npm \
-  -p 80:80 \
-  -p 81:81 \
-  -p 443:443 \
+  --network host \
   -v /home/npm/data:/data \
   -v /home/npm/letsencrypt:/etc/letsencrypt \
   --restart=always \
