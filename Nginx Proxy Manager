@@ -4,4 +4,4 @@ docker run -d \
   -v /home/npm/data:/data \
   -v /home/npm/letsencrypt:/etc/letsencrypt \
   --restart=always \
-  jc21/nginx-proxy-manager:latest
+  chishin/nginx-proxy-manager-zh
